@@ -1,8 +1,6 @@
 import $ from "jquery";
 
-document.querySelector(
-  ".load_nav"
-).innerHTML = ` <section class="container-fluid nav_out">
+document.querySelector(".load_nav").innerHTML = ` <section class="container-fluid nav_out">
 <section class="container nav_in">
   <section class="row py-5 nav_row align-items-center">
     <section class="col col-md-4 nav_left">
@@ -13,7 +11,7 @@ document.querySelector(
         <a href="/">Home</a>
       </li>
       <li><a href="/pages/about.html">About</a></li>
-      <li><a href="#">Leadership</a></li>
+      <li><a href="/pages/leadership.html">Leadership</a></li>
       <li><a href="/pages/gallery.html">gallery</a></li>
       <li><a href="/pages/media_coverage.html">media coverage</a></li>
       <li><a href="/pages/blog.html">blogs</a></li>
@@ -39,9 +37,7 @@ $(".hamburger > i").click(() => {
   }
 });
 
-document.querySelector(
-  ".load_footer"
-).innerHTML = ` <footer class="container-fluid footer_out">
+document.querySelector(".load_footer").innerHTML = ` <footer class="container-fluid footer_out">
 <section class="container footer_in">
   <section class="row footer_row">
     <section class="col footer_left px-0 px-md-4">
