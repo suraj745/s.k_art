@@ -1,0 +1,367 @@
+@import "./scss/function";
+@import "./scss/navbar";
+@import "./scss/carousel";
+@import "./scss/footer";
+
+@font-face {
+  font-family: myFirstFont;
+  src: url("/public/Century\ Gothic.ttf");
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+
+  body {
+    font-size: 1.6rem;
+    font-family: myFirstFont;
+    font-weight: 600;
+    background: black;
+    color: white;
+    ul,
+    li {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p {
+      padding: 0;
+      margin: 0;
+    }
+  }
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                    Home Banner                             */
+/* -------------------------------------------------------------------------- */
+.home_out {
+  min-height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.629) 10%, black 100%),
+    url("/public/images/Home/home_background_banner.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.home_row {
+  min-height: 100vh;
+  color: white;
+  @include big_heading;
+  @include default_button;
+  @include paragraph;
+  /* ---------------------------------- home left ---------------------------------- */
+  & > .home_left {
+    & > :not(:nth-child(1)) {
+      margin-top: 2rem;
+    }
+  }
+
+  /* ------------------------------- home right ------------------------------- */
+}
+
+/* -------------------------------------------------------------------------- */
+/*                           intro section                           */
+/* ------------------------------------------------------------------------- */
+.intro_row {
+  @include big_heading;
+  @include padding;
+  @include paragraph;
+}
+
+.intro_left {
+  & > :not(:nth-child(1)) {
+    margin-top: 2rem;
+  }
+
+  .paragraph {
+    @include media(">=1200px") {
+      & > .break {
+        display: none;
+      }
+    }
+    @include media("<=992px") {
+      & > .break {
+        display: none;
+      }
+    }
+  }
+}
+
+.intro_right {
+  & > img {
+    width: 100%;
+  }
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                Mission Section                                */
+/* -------------------------------------------------------------------------- */
+
+.mission_row {
+  @include padding;
+  @include card_heading;
+  @include paragraph;
+}
+
+.mission_cards_grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  @include media("<=992px") {
+    grid-template-columns: repeat(2, 1fr);
+    @include media("<=768px") {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+  gap: clamp(1rem, 4rem, 3vw);
+  place-items: center;
+}
+
+.mission_card {
+  height: auto;
+  flex-direction: column;
+  min-height: 40rem;
+  max-width: 35rem;
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+  padding: clamp(1rem, 3rem, 2vw);
+  text-align: justify;
+  @include flex(center, center);
+  background-image: linear-gradient(to top, #1c1c1c, black);
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                 testimonial                                */
+/* -------------------------------------------------------------------------- */
+
+.carousel_container_main {
+  @include padding;
+  min-height: 80vh;
+}
+/* -------------------------------------------------------------------------- */
+/*                           leading from the front                           */
+/* -------------------------------------------------------------------------- */
+
+.leading_row {
+  @include big_heading;
+  @include padding;
+}
+
+.leading_left {
+  & > img {
+    width: 100%;
+  }
+}
+
+.border_test {
+  border: 0.5rem solid white;
+  @include flex(center, center);
+  width: max-content;
+  padding: clamp(1rem, 3rem, 3vw);
+  border-radius: 5rem;
+}
+.testimonial2_card {
+  background-color: white;
+  text-align: center;
+  max-width: 60rem;
+  position: relative;
+  @include flex(center, center);
+  flex-direction: column;
+  border-radius: 5rem;
+  padding-block-start: 12rem;
+
+  & > :nth-child(1) {
+    position: absolute;
+    top: -10rem;
+    & > img {
+      max-width: 20rem;
+    }
+  }
+
+  & > :nth-child(2) {
+    & > p {
+      color: #514a7d;
+    }
+  }
+
+  & > :nth-last-child(1) {
+    & > img {
+      max-width: 6rem;
+      position: absolute;
+      background-color: black;
+      padding: 1rem;
+
+      @include media("<=550px") {
+        display: none;
+      }
+    }
+
+    & > :nth-child(1) {
+      top: -6rem;
+      left: 5rem;
+    }
+    & > :nth-child(2) {
+      right: 5rem;
+    }
+  }
+}
+
+.test_card_bottom {
+  @include flex(space-between, center);
+  padding-inline: 5rem;
+  padding-block: 2rem;
+
+  @include media("<=550px") {
+    @include flex(space-between, center);
+    flex-direction: column;
+  }
+  & > :nth-child(1) {
+    color: black;
+
+    & > h1 {
+      font-weight: 700;
+    }
+
+    & > p {
+      color: #6e6e6e;
+      font-size: 500;
+    }
+  }
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                gallery page                                */
+/* -------------------------------------------------------------------------- */
+
+.gallery_banner {
+  min-height: 100vh;
+  background-image: url("/public/images/Gallery/1145.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    height: 50%;
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.9), transparent);
+    left: 0;
+    top: 0;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    height: 50%;
+    width: 100%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 1), transparent);
+    left: 0;
+    bottom: 0rem;
+  }
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                 about page                                 */
+/* -------------------------------------------------------------------------- */
+
+.about_banner {
+  margin-top: 15rem;
+  min-height: 100vh;
+}
+
+@include media("<=992px") {
+  .about_heading {
+    display: none;
+  }
+}
+
+.about_card {
+  height: 100%;
+  position: relative;
+  & > :nth-child(1) {
+    & > img {
+      position: absolute;
+      top: 0rem;
+      max-width: 2rem;
+      @include media("<=992px") {
+        display: none;
+      }
+    }
+  }
+}
+
+.about_grid {
+  border-top: 0.5rem solid white;
+  @include media("<=992px") {
+    border-top: none;
+  }
+}
+
+/* ----------------------------- about grid card ---------------------------- */
+
+.about_grid_cards {
+  @include flex(center, center);
+  border-block: 0.2rem solid white;
+
+  & > .about_grid_img {
+    border-right: 0.2rem solid white;
+    height: 100%;
+    padding: 2rem;
+    @include flex(center, center);
+    & > img {
+      max-width: 10rem;
+    }
+  }
+
+  & > .about_grid_content {
+    height: 100%;
+    @include flex(space-around, flex-start);
+    flex-direction: column;
+
+    & > h3,
+    p {
+      height: 100%;
+      width: 100%;
+      @include flex(flex-start, center);
+      padding-inline: 3rem;
+      padding-block: 2rem;
+    }
+
+    & > h3 {
+      border-bottom: 0.2rem solid white;
+    }
+  }
+}
+
+// about grid
+
+.about_grid_row {
+  & > :nth-child(even) {
+    flex-direction: row-reverse;
+
+    & > .about_grid_img {
+      border-right: none;
+      border-left: 0.2rem solid white;
+    }
+  }
+}

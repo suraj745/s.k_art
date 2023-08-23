@@ -1,0 +1,141 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+  background-image: linear-gradient(rgb(18, 17, 17), rgba(28, 23, 49, 0.729));
+  overflow-x: hidden;
+}
+html {
+  font-size: 62.5%;
+}
+.main_section_wrapper {
+  background: url(/public/images/Blog.jpg);
+  min-height: 100vh;
+  width: 100vw !important;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  &::after {
+    content: "";
+    position: absolute;
+    height: 50%;
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.9), transparent);
+    left: 0;
+    top: 0;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    height: 50%;
+    width: 100%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 1), transparent);
+    left: 0;
+    bottom: 0rem;
+  }
+}
+.navbar_wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem 2rem;
+}
+ul,
+.map_section_wrapper {
+  display: flex;
+}
+.main_section_wrapper {
+  justify-content: center;
+  /* position: absolute; */
+}
+.logo_container img {
+  height: 7rem;
+  margin-left: 3rem;
+}
+li {
+  list-style: none;
+  margin-right: 1rem;
+  border-right: 1px solid #fff;
+  padding-right: 1rem;
+}
+li:nth-child(7) {
+  border: none;
+}
+li a {
+  border-right: 1px silid #fff;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.6rem;
+}
+.about_wrapper p {
+  border: 1px solid #fff;
+  text-align: center;
+  padding: 5rem;
+  font-size: 2rem;
+  display: inline-block;
+  letter-spacing: 1px;
+  margin-top: 1rem;
+  position: relative;
+  /* display: flex; */
+}
+/* .about_wrapper div {
+  padding: 5rem 2rem;
+} */
+.about_wrapper {
+  background-color: #000;
+  color: #fff;
+  padding: 10rem;
+  display: flex;
+  justify-content: center;
+}
+.about_wrapper div {
+  border-top: 1rem solid red;
+}
+.left_polygon {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.right_polygon {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+@media (min-width: 2000px) {
+  html {
+    font-size: 100%;
+  }
+}
+@media (max-width: 900px) {
+  html {
+    font-size: 55%;
+  }
+  br {
+    display: none;
+  }
+}
+@media (max-width: 600px) {
+  html {
+    font-size: 50%;
+  }
+  .navbar_wrapper {
+    display: none;
+  }
+  .about_wrapper {
+    padding: 3rem;
+  }
+  .about_wrapper p {
+    font-size: 1.4rem;
+    padding: 2rem;
+  }
+  .about_wrapper img {
+    height: 2.5rem;
+  }
+}
