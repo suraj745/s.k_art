@@ -52,9 +52,12 @@ html {
     font-weight: 400;
   }
 }
+.right-section h1 {
+  color: #ff0000;
+}
 .leadership_wrapper {
-  border-top: 1px solid #fff;
-  border-bottom: 1px solid #fff;
+  border: 1px solid #fff;
+  border: 1px solid #fff;
 }
 
 .right-section p {

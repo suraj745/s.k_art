@@ -57,7 +57,7 @@ document.querySelector(".load_footer").innerHTML = ` <footer class="container-fl
       <li><a href="#">home</a></li>
       <li><a href="#">about</a></li>
       <li><a href="#">leadership</a></li>
-      <li><a href="#">terms & condition</a></li>
+      <li><a href="/pages/Tnc.html">terms & condition</a></li>
       <li><a href="#">privacy policy</a></li>
       <li><a href="#">blog</a></li>
       <li><a href="#">media coverage</a></li>

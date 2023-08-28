@@ -80,7 +80,7 @@ form {
 }
 .map_section,
 .form_Section {
-  width: 50%;
+  width: 75%;
   padding: 1rem;
 }
 .additional_info {
@@ -127,7 +127,7 @@ button {
 }
 .additional_info {
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
 }
 .collection_1,
 .collection_2 {

@@ -12,6 +12,7 @@ export default {
         contactPage: "/pages/contact.html",
         galleryPage: "/pages/gallery.html",
         mediaPage: "/pages/media_coverage.html",
+        TermsNconditions: "/pages/Tnc.html",
       },
     },
   },
