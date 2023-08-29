@@ -34,7 +34,7 @@ $darkest_blue: #0f131d;
   .big_heading {
     font-size: clamp(2.2rem, 5rem, 3vw);
     font-weight: 600;
-    color: white;
+    color: $red;
     text-transform: capitalize;
   }
 }
@@ -65,12 +65,12 @@ $darkest_blue: #0f131d;
     border-radius: 5rem;
   }
 }
-       
+
 @mixin card_heading {
   .card_heading {
     font-size: clamp(2.2rem, 3rem, 3vw);
     font-weight: 600;
-    color: white;
+    color: $red;
     text-transform: capitalize;
   }
 }

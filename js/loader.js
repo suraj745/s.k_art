@@ -1,10 +1,12 @@
 import $ from "jquery";
 
-document.querySelector(".load_nav").innerHTML = ` <section class="container-fluid nav_out">
+document.querySelector(
+  ".load_nav"
+).innerHTML = ` <section class="container-fluid nav_out">
 <section class="container nav_in">
   <section class="row py-5 nav_row align-items-center">
     <section class="col col-md-4 nav_left">
-      <img src="/images/logo.png" alt="" />
+     <a href="/"> <img src="/images/logo.png" alt="" /></a>
     </section>
     <ul class="col nav_menus">
       <li>
@@ -37,7 +39,9 @@ $(".hamburger > i").click(() => {
   }
 });
 
-document.querySelector(".load_footer").innerHTML = ` <footer class="container-fluid footer_out">
+document.querySelector(
+  ".load_footer"
+).innerHTML = ` <footer class="container-fluid footer_out">
 <section class="container footer_in">
   <section class="row footer_row">
     <section class="col footer_left px-0 px-md-4">
@@ -47,21 +51,23 @@ document.querySelector(".load_footer").innerHTML = ` <footer class="container-fl
           touch
         </h1>
         <form class="input_grid">
-          <input type="text" /><input type="text" /><input
-            type="text"
-          /><input type="text" /><input type="text" />
+          <input type="text" placeholder='Name' />
+          <input type="email" placeholder='Email' />
+          <input type="number" placeholder='Phone Number'/>
+          <input type="text" placeholder='Comment' />
+          <input type="submit" placeholder='Name' />
         </form>
       </section>
     </section>
     <ul class="col footer_right py-5">
-      <li><a href="#">home</a></li>
-      <li><a href="#">about</a></li>
-      <li><a href="#">leadership</a></li>
+      <li><a href="/">home</a></li>
+      <li><a href="/pages/about.html">about</a></li>
+      <li><a href="/pages/leadership.html">leadership</a></li>
       <li><a href="#">terms & condition</a></li>
       <li><a href="#">privacy policy</a></li>
-      <li><a href="#">blog</a></li>
-      <li><a href="#">media coverage</a></li>
-      <li><a href="#">gallery</a></li>
+      <li><a href="/pages/blog.html">blog</a></li>
+      <li><a href="/pages/media_coverage.html">media coverage</a></li>
+      <li><a href="/pages/gallery.html">gallery</a></li>
     </ul>
   </section>
 </section>

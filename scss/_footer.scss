@@ -37,11 +37,40 @@
   & > :nth-child(4) {
     grid-column: 1 / span 2;
   }
+
   & > input {
     border: none;
     outline: none;
     border-radius: 1rem;
     width: 100%;
+    font-size: 1.2rem;
+    text-indent: 1rem;
+    font-weight: 600;
+    padding-block: 0.5rem;
+
+    &::placeholder {
+      text-align: center;
+      font-weight: 600;
+      font-size: 1.2rem;
+    }
+
+    &:active {
+      outline: 0.2rem solid $red;
+    }
+  }
+
+  input[type="submit"] {
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: white;
+    transition: 0.4s;
+    background-color: $red;
+
+    &:hover {
+      background-color: $red;
+      color: white;
+    }
   }
 }
 

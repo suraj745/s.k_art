@@ -5,8 +5,14 @@
 }
 
 .nav_left {
-  & > img {
-    max-width: 12rem;
+  & > a {
+    & > img {
+      max-width: 12rem;
+
+      @include media("<576px") {
+        max-width: 9rem;
+      }
+    }
   }
 }
 

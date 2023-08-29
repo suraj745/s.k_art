@@ -57,6 +57,9 @@ html {
   border-bottom: 1px solid #fff;
 }
 
+.right-section h1 {
+  color: #ff0000;
+}
 .right-section p {
   padding: 0rem 10rem 5rem 10rem;
   letter-spacing: 1px;

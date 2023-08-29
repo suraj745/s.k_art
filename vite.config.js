@@ -11,6 +11,7 @@ export default {
         blogPage: "/pages/blog.html",
         contactPage: "/pages/contact.html",
         galleryPage: "/pages/gallery.html",
+        leadershipPage: "/pages/leadership.html",
         mediaPage: "/pages/media_coverage.html",
       },
     },
