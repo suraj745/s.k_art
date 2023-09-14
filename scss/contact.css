@@ -26,7 +26,7 @@ html {
     position: absolute;
     height: 50%;
     width: 100%;
-    background: linear-gradient(rgba(0, 0, 0, 0.9), transparent);
+    background: linear-gradient(#0e0000, transparent);
     left: 0;
     top: 0;
   }
@@ -36,7 +36,7 @@ html {
     position: absolute;
     height: 50%;
     width: 100%;
-    background: linear-gradient(to top, rgba(0, 0, 0, 1), transparent);
+    background: linear-gradient(to top, #0e0000, transparent);
     left: 0;
     bottom: 0rem;
   }
@@ -58,21 +58,6 @@ ul,
   height: 7rem;
   margin-left: 3rem;
 }
-li {
-  list-style: none;
-  margin-right: 1rem;
-  border-right: 1px solid #fff;
-  padding-right: 1rem;
-}
-li:nth-child(7) {
-  border: none;
-}
-li a {
-  border-right: 1px silid #fff;
-  color: #fff;
-  text-decoration: none;
-  font-size: 1.6rem;
-}
 form {
   display: flex;
   flex-direction: column;
@@ -80,7 +65,7 @@ form {
 }
 .map_section,
 .form_Section {
-  width: 50%;
+  width: 75%;
   padding: 1rem;
 }
 .additional_info {
@@ -88,7 +73,6 @@ form {
 }
 .map_section_wrapper {
   padding: 4rem;
-  background-color: #000;
 }
 .form_input {
   height: 5rem;
@@ -127,7 +111,7 @@ button {
 }
 .additional_info {
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
 }
 .collection_1,
 .collection_2 {
@@ -141,6 +125,7 @@ footer {
   height: 100%;
   width: 100vw;
 }
+/* }
 @media (max-width: 1100px) {
   .additional_info,
   .additional_info2 {
@@ -177,4 +162,10 @@ footer {
     height: 100%;
     object-fit: fill;
   }
+} */
+
+.additional_info {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  place-items: center;
 }

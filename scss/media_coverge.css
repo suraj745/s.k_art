@@ -7,7 +7,6 @@
 }
 body {
   font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
-  background-image: linear-gradient(rgb(18, 17, 17), rgba(28, 23, 49, 0.729));
   overflow-x: hidden;
 }
 html {
@@ -20,24 +19,28 @@ html {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-
+  overflow: hidden;
+  position: relative;
   &::after {
     content: "";
     position: absolute;
     height: 50%;
     width: 100%;
-    background: linear-gradient(rgba(0, 0, 0, 0.9), transparent);
+    background: linear-gradient(#0e0000, transparent);
     left: 0;
     top: 0;
   }
 
+  .nav_menus > li > a {
+    font-size: 1.8rem !important;
+  }
   &::before {
     content: "";
     position: absolute;
     height: 50%;
     width: 100%;
-    background: linear-gradient(to top, rgba(0, 0, 0, 1), transparent);
-    left: 0;
+    background: linear-gradient(to top, #0e0000, transparent);
+    left: 0rem;
     bottom: 0rem;
   }
 }
@@ -58,21 +61,6 @@ ul,
 .logo_container img {
   height: 7rem;
   margin-left: 3rem;
-}
-li {
-  list-style: none;
-  margin-right: 1rem;
-  border-right: 1px solid #fff;
-  padding-right: 1rem;
-}
-li:nth-child(7) {
-  border: none;
-}
-li a {
-  border-right: 1px silid #fff;
-  color: #fff;
-  text-decoration: none;
-  font-size: 1.6rem;
 }
 form {
   display: flex;
@@ -105,7 +93,6 @@ form {
   flex-wrap: wrap;
   padding: 2rem;
   /* margin: 2rem; */
-  background-color: #000;
 }
 .achivement img {
   height: 30rem;
@@ -113,12 +100,12 @@ form {
   margin: 2rem 1rem;
   padding: 2rem;
 }
-@media (min-width: 2000px) {
+/* @media (min-width: 2000px) {
   html {
     font-size: 100%;
   }
-}
-@media (max-width: 900px) {
+} */
+/* @media (max-width: 900px) {
   html {
     font-size: 55%;
   }
@@ -131,21 +118,52 @@ form {
   .main_section_wrapper p {
     padding: 0 10rem;
   }
-  /* .main_section_wrapper h1 {
-    font-size: 8rem;
-  } */
-}
-@media (max-width: 600px) {
+ 
+} */
+/* @media (max-width: 600px) {
   html {
     font-size: 50%;
   }
   .navbar_wrapper {
     display: none;
   }
-  /* .main_section_wrapper h1 {
-    font-size: 6rem;
-  } */
+
   .main_section_wrapper p {
     padding: 0 2rem;
   }
+} */
+.banner-content {
+  position: relative;
+  z-index: 2;
+}
+
+.media_p {
+  opacity: 80%;
+}
+
+.achivement {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  place-items: center;
+
+  @media screen and (max-width: 992px) {
+    grid-template-columns: repeat(2, 1fr);
+
+    @media screen and (max-width: 768px) {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+}
+
+.achivement > .ac_card > img {
+  width: 100%;
+  height: 100%;
+}
+.achivement > .ac_card {
+  width: 100%;
+  height: 40rem;
+}
+
+.media_cover_headline {
+  text-align: center !important;
 }

@@ -1,0 +1,40 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+  background-image: linear-gradient(rgb(18, 17, 17), rgba(28, 23, 49, 0.729));
+  overflow-x: hidden;
+}
+html {
+  font-size: 62.5%;
+}
+.main_section_wrapper {
+  min-height: 100vh;
+  width: 100vw !important;
+  padding: 5rem;
+}
+h1 {
+  font-size: 5rem;
+  font-weight: 400;
+  /* margin: 2rem 0; */
+  padding: 4rem 0rem;
+  text-transform: uppercase;
+}
+@media (min-width: 2000px) {
+  html {
+    font-size: 100%;
+  }
+}
+
+.tnc_row > div > p {
+  text-align: left;
+}
+
+.ul_para > :not(:nth-child(1)) {
+  margin-top: 1rem;
+}

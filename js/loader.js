@@ -5,7 +5,7 @@ document.querySelector(
 ).innerHTML = ` <section class="container-fluid nav_out">
 <section class="container nav_in">
   <section class="row py-5 nav_row align-items-center">
-    <section class="col col-md-4 nav_left">
+    <section class="col col-md-2 nav_left">
      <a href="/"> <img src="/images/logo.png" alt="" /></a>
     </section>
     <ul class="col nav_menus">
@@ -17,6 +17,7 @@ document.querySelector(
       <li><a href="/pages/gallery.html">gallery</a></li>
       <li><a href="/pages/media_coverage.html">media coverage</a></li>
       <li><a href="/pages/blog.html">blogs</a></li>
+      <li><a href="/pages/events.html">events</a></li>
       <li><a href="/pages/contact.html">contact</a></li>
     </ul>
 
@@ -63,8 +64,8 @@ document.querySelector(
       <li><a href="/">home</a></li>
       <li><a href="/pages/about.html">about</a></li>
       <li><a href="/pages/leadership.html">leadership</a></li>
-      <li><a href="#">terms & condition</a></li>
-      <li><a href="#">privacy policy</a></li>
+      <li><a href="/pages/terms&condition.html">terms & condition</a></li>
+      <li><a href="/pages/privacy_policy.html">privacy policy</a></li>
       <li><a href="/pages/blog.html">blog</a></li>
       <li><a href="/pages/media_coverage.html">media coverage</a></li>
       <li><a href="/pages/gallery.html">gallery</a></li>
