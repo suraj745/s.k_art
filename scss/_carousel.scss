@@ -1,16 +1,16 @@
 .mySwiper {
   overflow-x: hidden;
-}
 
-.swiper-wrapper {
-  width: 100% !important;
-}
-.swiper-slide {
-  & > img {
-    width: 100%;
+  .swiper-wrapper {
+    width: 100% !important;
   }
-}
+  .swiper-slide {
+    & > img {
+      width: 100%;
+    }
+  }
 
-.swiper-slide > .card {
-  text-align: center;
+  .swiper-slide > .card {
+    text-align: center;
+  }
 }

@@ -82,22 +82,6 @@ var swiper = new Swiper(".event_mySwiper", {
   },
 });
 
-var swiper = new Swiper(".mySwiper-home-bottom", {
-  autoplay: {
-    delay: 3000,
-  },
-  spaceBetween: 50,
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-
-  grabCursor: true,
-  centeredSlides: true,
-  loop: true,
-  slidesPerView: "1",
-});
-
 var swiper = new Swiper(".event_carousel_banner", {
   autoplay: {
     delay: 3000,
@@ -111,5 +95,21 @@ var swiper = new Swiper(".event_carousel_banner", {
   grabCursor: true,
   centeredSlides: true,
   loop: true,
-  slidesPerView: "1",
+  slidesPerView: 1,
+});
+
+var swiper = new Swiper(".mySwiper4", {
+  autoplay: {
+    delay: 3000,
+  },
+  spaceBetween: 50,
+
+  loop: true,
+  slidesPerView: 1,
+  centeredSlides: true,
+
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
 });

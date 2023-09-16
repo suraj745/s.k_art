@@ -51,7 +51,7 @@ html {
   }
 }
 
-body::-webkit-scrollbar {
+::-webkit-scrollbar {
   display: none;
 }
 
@@ -237,7 +237,7 @@ body::-webkit-scrollbar {
   position: relative;
   @include flex(center, center);
   flex-direction: column;
-  border-radius: 5rem;
+  border-radius: 2.5rem;
   padding-block-start: 12rem;
 
   & > :nth-child(1) {
@@ -1007,4 +1007,21 @@ body::-webkit-scrollbar {
 
 .event_car_button {
   color: $red !important;
+}
+
+.home_bottom_row {
+  height: 100vh;
+}
+
+.mySwiper4 {
+  height: 90vh !important;
+
+  & .swiper-slide {
+    display: flex !important;
+    align-items: center;
+  }
+
+  &.swiper-wrapper {
+    width: 100% !important;
+  }
 }
