@@ -25,12 +25,43 @@ h1 {
   padding: 4rem 0rem;
   text-transform: uppercase;
 }
+.border_test {
+  margin: 10rem 0;
+}
+.paragraph {
+  overflow: -moz-scrollbars-vertical;
+  overflow-y: scroll;
+  overflow-x: hidden !important ;
+}
+/* width */
+.paragraph::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #fff;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
 @media (min-width: 2000px) {
   html {
     font-size: 100%;
   }
 }
-
+@media (max-width: 600px) {
+  .testimonial2_card {
+    max-width: 32rem !important;
+  }
+}
 .tnc_row > div > p {
   text-align: left;
 }

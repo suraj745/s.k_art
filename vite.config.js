@@ -16,6 +16,7 @@ export default {
         TermsNconditions: "/pages/terms&condition.html",
         privacypolicy: "/pages/privacy_policy.html",
         eventPage: "/pages/events.html",
+        testimonials: "/pages/testimonials.html",
       },
     },
   },
