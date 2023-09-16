@@ -2,10 +2,10 @@ var swiper = new Swiper(".mySwiper", {
   autoplay: {
     delay: 2000,
   },
-  // navigation: {
-  //   nextEl: ".swiper-button-next",
-  //   prevEl: ".swiper-button-prev",
-  // },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
   effect: "coverflow",
 
   grabCursor: true,
@@ -80,4 +80,36 @@ var swiper = new Swiper(".event_mySwiper", {
       spaceBetween: 5,
     },
   },
+});
+
+var swiper = new Swiper(".mySwiper-home-bottom", {
+  autoplay: {
+    delay: 3000,
+  },
+  spaceBetween: 50,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+
+  grabCursor: true,
+  centeredSlides: true,
+  loop: true,
+  slidesPerView: "1",
+});
+
+var swiper = new Swiper(".event_carousel_banner", {
+  autoplay: {
+    delay: 3000,
+  },
+  spaceBetween: 50,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+
+  grabCursor: true,
+  centeredSlides: true,
+  loop: true,
+  slidesPerView: "1",
 });
