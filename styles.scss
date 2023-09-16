@@ -993,3 +993,21 @@ body::-webkit-scrollbar {
   font-size: 2rem;
   text-decoration: underline;
 }
+
+// load more button
+
+.load_more_button {
+  @include flex(center, center);
+
+  @include default_button;
+  .default_button {
+    transition: 0.4s;
+    &:hover {
+      scale: 1.05;
+    }
+  }
+}
+
+.event_car_button {
+  color: $red !important;
+}
