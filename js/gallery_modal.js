@@ -85,7 +85,7 @@ function loadGalleryCard(data) {
 <li>
   <img src='${value.img}' alt="" />
 </li>
-<li>
+<li >
   <p class="p-4">
    ${value.content}
   </p>
