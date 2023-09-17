@@ -422,6 +422,7 @@ html {
   }
 }
 .gallery_container {
+  min-height: 100vh;
   & > .modal_card {
     max-width: 70vw;
     & > :nth-child(1) {
