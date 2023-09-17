@@ -413,10 +413,10 @@ html {
   position: fixed;
   left: 0;
   top: 0;
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.616);
   z-index: 9999999999;
   overflow-y: scroll;
-
+  backdrop-filter: blur(1rem);
   & > ::-webkit-scrollbar {
     display: none;
   }
@@ -425,6 +425,8 @@ html {
   min-height: 100vh;
   & > .modal_card {
     max-width: 70vw;
+    position: relative;
+    z-index: 20;
     & > :nth-child(1) {
       text-align: right;
       & i {

@@ -154,5 +154,13 @@ gCard.forEach((value, index) => {
     closeModal.addEventListener("click", () => {
       gModal.classList.remove("show-modal");
     });
+
+    galleryContainer.addEventListener("click", () => {
+      gModal.classList.remove("show-modal");
+    });
+
+    document.querySelector(".modal_card").addEventListener("click", (e) => {
+      e.stopPropagation();
+    });
   });
 });
