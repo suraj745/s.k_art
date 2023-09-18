@@ -26,12 +26,7 @@ h1 {
   text-transform: uppercase;
 }
 .border_test {
-  margin: 10rem 0;
-}
-.paragraph {
-  overflow: -moz-scrollbars-vertical;
-  overflow-y: scroll;
-  overflow-x: hidden !important ;
+  margin: 7rem 2rem;
 }
 /* width */
 .paragraph::-webkit-scrollbar {
@@ -51,6 +46,9 @@ h1 {
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
+}
+.testimonial2_card {
+  max-width: 40rem;
 }
 @media (min-width: 2000px) {
   html {

@@ -27,7 +27,8 @@ html {
 
   body {
     font-size: 1.6rem !important;
-    font-family: myFirstFont;
+    // font-family: myFirstFont;
+    font-family: "Montserrat", sans-serif;
     font-weight: 600;
     background: $main_color;
     color: white;
@@ -66,7 +67,7 @@ html {
 
 .home_out {
   min-height: 100vh;
-  background-image: linear-gradient(#2b0706ac 10%, black 100%);
+  background-image: linear-gradient(#2b0706ac 10%, #0000009c 100%);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: right;
@@ -511,9 +512,9 @@ html {
 .about_grid_cards {
   @include flex(center, center);
   // border: 0.2rem solid white;
-  border-top: 0.2rem solid;
+  // border-top: 0.2rem solid;
   position: relative;
-  border-top: 0.2rem solid white;
+  // border-top: 0.2rem solid white;
 
   & > .about_grid_img {
     padding: 2rem;
@@ -542,8 +543,13 @@ html {
     }
 
     & > h3 {
-      border-bottom: 0.2rem solid white;
-      color: $red;
+      // border-bottom: 0.2rem solid white;
+      color: #fff;
+      text-decoration: none;
+      background-color: $red;
+      width: auto;
+      border-radius: 2.5rem;
+      margin-left: 3rem;
     }
   }
 }
@@ -554,22 +560,22 @@ html {
   & > :nth-child(even) {
     flex-direction: row-reverse;
     .about_grid_content {
-      border-right: 0.2rem solid white;
+      // border-right: 0.2rem solid white;
     }
   }
 
   & > :nth-child(odd) {
     .about_grid_content {
-      border-left: 0.2rem solid white;
+      // border-left: 0.2rem solid white;
     }
   }
 
   .about_grid_content {
-    min-height: 25rem;
+    // min-height: 25rem;
   }
 
   & > :nth-last-child(1) {
-    border-bottom: 0.2rem solid white;
+    // border-bottom: 0.2rem solid white;
   }
 }
 
@@ -1065,5 +1071,27 @@ html {
   &::-webkit-scrollbar-thumb {
     background-color: $red;
     height: 2rem !important;
+  }
+}
+.about_grid_cards {
+  margin: 3rem 0;
+  padding: 3rem 10rem !important;
+}
+.mission_card {
+  border-radius: 1rem;
+}
+@media (max-width: 900px) {
+  .about_grid_cards {
+    margin: 2rem 0;
+    padding: 2rem 5rem !important;
+  }
+}
+@media (max-width: 600px) {
+  .about_grid_cards {
+    margin: 2rem 0;
+    padding: 2rem 2rem !important;
+  }
+  .about_grid_cards > .about_grid_content > h3 {
+    margin-left: 1rem !important;
   }
 }
