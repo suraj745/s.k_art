@@ -868,6 +868,16 @@ html {
 }
 
 .achivement {
+  & a {
+    text-decoration: none;
+  }
+  @include big_heading;
+
+  .big_heading {
+    font-size: 2rem;
+    padding-bottom: 2rem;
+    text-align: center;
+  }
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   place-items: center;
@@ -883,12 +893,17 @@ html {
 }
 
 .achivement > .ac_card > img {
-  width: 100%;
-  height: 100%;
-}
-.achivement > .ac_card {
-  width: 100%;
+  width: 40rem;
   height: 40rem;
+}
+.achivement > .ac_card > img {
+  width: 100%;
+  // height: 100%;
+  transition: 0.4s;
+  cursor: pointer;
+  &:hover {
+    scale: 1.05;
+  }
 }
 
 .media_cover_headline {
@@ -1026,5 +1041,16 @@ html {
 
   &.swiper-wrapper {
     width: 100% !important;
+  }
+}
+
+.test_page_para {
+  &::-webkit-scrollbar {
+    display: block;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: $red;
+    height: 2rem !important;
   }
 }
