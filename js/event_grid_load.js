@@ -104,16 +104,22 @@ const eventGrid2 = document.querySelector(".sahkshat_bharat");
 function loadEventData(data, query) {
   query.innerHTML = data
     .map((value, index) => {
-      console.log(value);
+      if (value.para.length > 50) {
+        value.para2 = `${value.para.slice(0, 200)}...`;
+      }
       return `<ul class="gallery_card">
   <li>
     <img src='${value.img}' alt="" />
   </li>
   <li>
     <p class="p-4">
-     ${value.para}
+     ${value.para2}
     </p>
   </li>
+  <li class='d-none full-content' >
+  <p class="p-4">
+   ${value.para}
+  </p>
   </ul>`;
     })
     .join(" ");
@@ -142,7 +148,7 @@ gCard.forEach((value, index) => {
       <li>
         <p class="p-4">
         ${
-          gCard[index].querySelector(".gallery_card > :nth-child(2) p")
+          gCard[index].querySelector(".gallery_card > :nth-child(3) p")
             .textContent
         }
         </p>

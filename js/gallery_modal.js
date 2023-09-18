@@ -81,15 +81,24 @@ const gGrid = document.querySelector(".gallery_grid");
 function loadGalleryCard(data) {
   gGrid.innerHTML = data
     .map((value, index) => {
+      if (value.content.length > 50) {
+        value.content2 = `${value.content.slice(0, 200)}...`;
+      }
       return `<ul class="gallery_card">
 <li>
   <img src='${value.img}' alt="" />
 </li>
 <li >
   <p class="p-4">
+   ${value.content2}
+  </p>
+</li>
+<li class='d-none full-content' >
+  <p class="p-4">
    ${value.content}
   </p>
 </li>
+
 </ul>`;
     })
     .join(" ");
@@ -117,7 +126,7 @@ gCard.forEach((value, index) => {
       <li>
         <p class="p-4">
         ${
-          gCard[index].querySelector(".gallery_card > :nth-child(2) p")
+          gCard[index].querySelector(".gallery_card > :nth-child(3) p")
             .textContent
         }
         </p>
