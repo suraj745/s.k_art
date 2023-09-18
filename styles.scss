@@ -877,6 +877,7 @@ html {
     font-size: 2rem;
     padding-bottom: 2rem;
     text-align: center;
+    text-transform: uppe;
   }
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -888,6 +889,7 @@ html {
 
     @media screen and (max-width: 768px) {
       grid-template-columns: repeat(1, 1fr);
+      row-gap: 8rem;
     }
   }
 }
