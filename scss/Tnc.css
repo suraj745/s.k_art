@@ -1,69 +1,130 @@
-*,
-*::before,
-*::after {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-body {
-  font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
-  background-image: linear-gradient(rgb(18, 17, 17), rgba(28, 23, 49, 0.729));
-  overflow-x: hidden;
-}
-html {
-  font-size: 62.5%;
-}
-.main_section_wrapper {
-  min-height: 100vh;
-  width: 100vw !important;
-  padding: 5rem;
-}
-h1 {
-  font-size: 5rem;
-  font-weight: 400;
-  /* margin: 2rem 0; */
-  padding: 4rem 0rem;
-  text-transform: uppercase;
-}
-.border_test {
-  margin: 7rem 2rem;
-}
-/* width */
-.paragraph::-webkit-scrollbar {
-  width: 8px;
-}
+<section class="border_test test_card_border mt-5">
+<ul class="testimonial2_card test_page_card">
+  <li>
+    <img src="/public/images/Mr. Shailesh Haribhakti.png" alt="" />
+  </li>
+  <li>
+    <p class="paragraph test_page_para px-2 px-md-4">
+      Alok exemplifies the qualities of an exceptionally dedicated
+      journalist. His unwavering commitment to...
+    </p>
 
-/* Track */
-::-webkit-scrollbar-track {
-  background: #fff;
-}
+    <section class="test_card_bottom">
+      <section>
+        <h1 style="font-size: 2rem">Mr. Shailesh Haribhakti</h1>
+        <p>Non-Executive Chairman</p>
+      </section>
+      <section>
+        <img src="/images/Home/star.png" alt="" />
+      </section>
+    </section>
+  </li>
 
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: #888;
-}
+  <li>
+    <img class="red_comma" src="/images/Home/red_comma.png" alt="" />
+    <img
+      class="white_comma"
+      src="/images/Home/white_comma.png"
+      alt=""
+    />
+  </li>
+</ul>
+</section>
 
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: #555;
-}
-.testimonial2_card {
-  max-width: 40rem;
-}
-@media (min-width: 2000px) {
-  html {
-    font-size: 100%;
-  }
-}
-@media (max-width: 600px) {
-  .testimonial2_card {
-    max-width: 32rem !important;
-  }
-}
-.tnc_row > div > p {
-  text-align: left;
-}
+<section class="border_test mt-5">
+<ul class="testimonial2_card test_page_card">
+  <li>
+    <img src="/public/images/bhavna doshi ji.png" alt="" />
+  </li>
+  <li>
+    <p class="paragraph test_page_para px-2 px-md-4">
+      Alok, at this young age, you so beautifully capture journeys of
+      leading personalities through your interviews...
+    </p>
 
-.ul_para > :not(:nth-child(1)) {
-  margin-top: 1rem;
-}
+    <section class="test_card_bottom">
+      <section>
+        <h1 style="font-size: 2rem">BHAVNA DOSHI</h1>
+        <p>Managing Partner</p>
+      </section>
+      <section>
+        <img src="/images/Home/star.png" alt="" />
+      </section>
+    </section>
+  </li>
+
+  <li>
+    <img class="red_comma" src="/images/Home/red_comma.png" alt="" />
+    <img
+      class="white_comma"
+      src="/images/Home/white_comma.png"
+      alt=""
+    />
+  </li>
+</ul>
+</section>
+<section class="border_test mt-5">
+<ul class="testimonial2_card test_page_card">
+  <li>
+    <img src="/public/images/Satyjeet Tambe.png" alt="" />
+  </li>
+  <li>
+    <p class="paragraph test_page_para px-2 px-md-4">
+      Over the years, I have been observing the remarkable evolution of
+      Alok's career within the media industry...
+    </p>
+
+    <section class="test_card_bottom">
+      <section>
+        <h1 style="font-size: 2rem">Mr Satyajeet Tambe</h1>
+        <p>MLC, Maharashtra Legislative Assembly</p>
+      </section>
+      <section>
+        <img src="/images/Home/star.png" alt="" />
+      </section>
+    </section>
+  </li>
+
+  <li>
+    <img class="red_comma" src="/images/Home/red_comma.png" alt="" />
+    <img
+      class="white_comma"
+      src="/images/Home/white_comma.png"
+      alt=""
+    />
+  </li>
+</ul>
+</section>
+
+<section class="border_test mt-5">
+<ul class="testimonial2_card test_page_card">
+  <li>
+    <img src="/public/images/Satyjeet Tambe.png" alt="" />
+  </li>
+  <li>
+    <p class="paragraph test_page_para px-2 px-md-4">
+      Over the years, I have been observing the remarkable evolution of
+      Alok's career within the media industry...
+    </p>
+
+    <section class="test_card_bottom">
+      <section>
+        <h1 style="font-size: 2rem">Mr Satyajeet Tambe</h1>
+        <p>MLC, Maharashtra Legislative Assembly</p>
+      </section>
+      <section>
+        <img src="/images/Home/star.png" alt="" />
+      </section>
+    </section>
+  </li>
+
+  <li>
+    <img class="red_comma" src="/images/Home/red_comma.png" alt="" />
+    <img
+      class="white_comma"
+      src="/images/Home/white_comma.png"
+      alt=""
+    />
+  </li>
+</ul>
+</section>
