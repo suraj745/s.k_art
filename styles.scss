@@ -1095,3 +1095,74 @@ html {
     margin-left: 1rem !important;
   }
 }
+
+/* --------------
+
+-------------- testimonial_page ---------------------------- */
+
+.test_page_row {
+  margin-top: 15rem;
+  min-height: 100vh;
+}
+
+.test_page_right {
+  // display: flex;
+  // flex-wrap: wrap;
+  // justify-content: center;
+  // align-items: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  place-items: center;
+  row-gap: 6rem;
+  column-gap: clamp(1rem, 2rem, 3vw);
+  @include media("<=1200px") {
+    grid-template-columns: repeat(2, 1fr);
+    @include media("<=768px") {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+}
+
+.test_card_border {
+  width: auto !important;
+
+  .test_page_card {
+    max-width: none;
+    min-height: 40rem;
+    & .test_card_bottom {
+      flex-direction: column;
+    }
+
+    & > :nth-last-child(1) {
+      .red_comma {
+        left: 0rem;
+        @include media("<=1400px") {
+          left: -1.5rem;
+        }
+        @include media("<=768px") {
+          display: none;
+        }
+      }
+
+      .white_comma {
+        right: 0rem;
+        bottom: -6rem;
+        @include media("<=768px") {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+// .test_page_card {
+//   width: auto !important;
+// }
+
+.coverflow_carousel {
+  .swiper-wrapper {
+    .swiper-slide {
+      text-decoration: none !important;
+    }
+  }
+}
